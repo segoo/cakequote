@@ -7,3 +7,108 @@ Request URL: /cakequote/admin.groups/view/3
 Stack Trace:
 #0 /Users/sego/Sites/cakequote/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2013-02-20 16:34:14 Error: [MissingActionException] Action UsersController::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+)
+Request URL: /cakequote/users/login
+Stack Trace:
+#0 /Users/sego/Sites/cakequote/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/sego/Sites/cakequote/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/sego/Sites/cakequote/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-02-20 16:38:21 Error: [MissingActionException] Action UsersController::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+)
+Request URL: /cakequote/users/login
+Stack Trace:
+#0 /Users/sego/Sites/cakequote/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/sego/Sites/cakequote/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/sego/Sites/cakequote/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-02-20 16:39:48 Error: [MissingActionException] Action UsersController::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+)
+Request URL: /cakequote/users/login
+Stack Trace:
+#0 /Users/sego/Sites/cakequote/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/sego/Sites/cakequote/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/sego/Sites/cakequote/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-02-20 16:39:53 Error: [MissingActionException] Action UsersController::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+)
+Request URL: /cakequote/users/login
+Stack Trace:
+#0 /Users/sego/Sites/cakequote/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/sego/Sites/cakequote/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/sego/Sites/cakequote/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-02-20 16:42:05 Error: [MissingActionException] Action UsersController::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+)
+Request URL: /cakequote/users/login
+Stack Trace:
+#0 /Users/sego/Sites/cakequote/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/sego/Sites/cakequote/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/sego/Sites/cakequote/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-02-20 16:50:14 Error: Fatal Error (4): syntax error, unexpected ')' in [/Users/sego/Sites/cakequote/app/Controller/UsersController.php, line 20]
+2013-02-20 16:50:14 Error: [FatalErrorException] syntax error, unexpected ')'
+Request URL: /cakequote/users/login
+Stack Trace:
+#0 /Users/sego/Sites/cakequote/lib/Cake/Error/ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/sego/Sit...', 20)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/sego/Sit...', 20, Array)
+#2 /Users/sego/Sites/cakequote/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/sego/Sit...', 20, Array)
+#3 /Users/sego/Sites/cakequote/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-20 16:50:29 Error: Fatal Error (4): syntax error, unexpected ')' in [/Users/sego/Sites/cakequote/app/Controller/UsersController.php, line 26]
+2013-02-20 16:50:29 Error: [FatalErrorException] syntax error, unexpected ')'
+Request URL: /cakequote/users/login
+Stack Trace:
+#0 /Users/sego/Sites/cakequote/lib/Cake/Error/ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/sego/Sit...', 26)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/sego/Sit...', 26, Array)
+#2 /Users/sego/Sites/cakequote/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/sego/Sit...', 26, Array)
+#3 /Users/sego/Sites/cakequote/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-20 16:50:30 Error: Fatal Error (4): syntax error, unexpected ')' in [/Users/sego/Sites/cakequote/app/Controller/UsersController.php, line 26]
+2013-02-20 16:50:30 Error: [FatalErrorException] syntax error, unexpected ')'
+Request URL: /cakequote/users/login
+Stack Trace:
+#0 /Users/sego/Sites/cakequote/lib/Cake/Error/ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/sego/Sit...', 26)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/sego/Sit...', 26, Array)
+#2 /Users/sego/Sites/cakequote/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/sego/Sit...', 26, Array)
+#3 /Users/sego/Sites/cakequote/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-20 16:50:32 Error: Fatal Error (4): syntax error, unexpected ')' in [/Users/sego/Sites/cakequote/app/Controller/UsersController.php, line 26]
+2013-02-20 16:50:32 Error: [FatalErrorException] syntax error, unexpected ')'
+Request URL: /cakequote/users/login
+Stack Trace:
+#0 /Users/sego/Sites/cakequote/lib/Cake/Error/ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/sego/Sit...', 26)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/sego/Sit...', 26, Array)
+#2 /Users/sego/Sites/cakequote/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/sego/Sit...', 26, Array)
+#3 /Users/sego/Sites/cakequote/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-20 17:15:42 Error: Fatal Error (4): syntax error, unexpected ';', expecting ':' in [/Users/sego/Sites/cakequote/app/View/Layouts/default.ctp, line 48]
+2013-02-20 17:15:42 Error: [FatalErrorException] syntax error, unexpected ';', expecting ':'
+Request URL: /cakequote/
+Stack Trace:
+#0 /Users/sego/Sites/cakequote/lib/Cake/Error/ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/sego/Sit...', 48)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/sego/Sit...', 48, Array)
+#2 /Users/sego/Sites/cakequote/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/sego/Sit...', 48, Array)
+#3 /Users/sego/Sites/cakequote/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
