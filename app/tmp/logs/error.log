@@ -1,0 +1,9 @@
+2013-02-20 15:42:18 Error: [MissingControllerException] Controller class Admin.groupsController could not be found.
+Exception Attributes: array (
+  'class' => 'Admin.groupsController',
+  'plugin' => NULL,
+)
+Request URL: /cakequote/admin.groups/view/3
+Stack Trace:
+#0 /Users/sego/Sites/cakequote/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
