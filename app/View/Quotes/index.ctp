@@ -1,54 +1,26 @@
 <div class="quotes index">
 	<h2><?php echo __('Quotes'); ?></h2>
-	<table cellpadding="0" cellspacing="0">
-	<tr>
-			<th><?php echo $this->Paginator->sort('id'); ?></th>
-			<th><?php echo $this->Paginator->sort('title'); ?></th>
-			<th><?php echo $this->Paginator->sort('body'); ?></th>
-			<th><?php echo $this->Paginator->sort('user_id'); ?></th>
-			<th><?php echo $this->Paginator->sort('created'); ?></th>
-			<th><?php echo $this->Paginator->sort('updated'); ?></th>
-			<th class="actions"><?php echo __('Actions'); ?></th>
-	</tr>
+	
+	
+	
+	
+	
+	
+	
+	
 	<?php foreach ($quotes as $quote): ?>
-	<tr>
-		<td><?php echo h($quote['Quote']['id']); ?>&nbsp;</td>
-		<td><?php echo h($quote['Quote']['title']); ?>&nbsp;</td>
-		<td><?php echo h($quote['Quote']['body']); ?>&nbsp;</td>
-		<td>
-			<?php 
-			if($me['id'] === 0){
-				echo h($quote['User']['username']);
-			}else{
-				echo $this->Html->link($quote['User']['username'], array('controller' => 'users', 'action' => 'view', $quote['User']['id'])); 
-			}?>
-		</td>
-		<td><?php echo h($quote['Quote']['created']); ?>&nbsp;</td>
-		<td><?php echo h($quote['Quote']['updated']); ?>&nbsp;</td>
-		<td class="actions">
-			
-			
-			<?php 
-			if($me['id'] === 0){
-				echo $this->Html->link(__('View'), array('action' => 'view', $quote['Quote']['id']));
-			}else{
-				if($me['id']>0 && $quote['User']['id'] == $me['id']) {
-					echo $this->Html->link(__('View'), array('action' => 'view', $quote['Quote']['id']));
-					echo $this->Html->link(__('Edit'), array('action' => 'edit', $quote['Quote']['id']));
-					echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $quote['Quote']['id']), null, __('Are you sure you want to delete # %s?', $quote['Quote']['id']));
-				} 	else {
-						echo $this->Html->link(__('View'), array('action' => 'view', $quote['Quote']['id']));
-					}
-			}
-			
-			
-			
-			
-			?>
-		</td>
-	</tr>
+		
+		
+		
+		<div class="citation">
+			<h3><?php echo h($quote['Quote']['title']); ?></h3>
+			<p class="lead">"<?php echo h($quote['Quote']['body']); ?>"</p>
+			<small>- <?php echo $this->Html->link($quote['User']['username'], array('controller' => 'users', 'action' => 'view', $quote['User']['id'])); ?> - <?php echo h($quote['Quote']['created']); ?> </small>
+		</div>
+		
+		
+	
 <?php endforeach; ?>
-	</table>
 	<p>
 	<?php
 	echo $this->Paginator->counter(array(

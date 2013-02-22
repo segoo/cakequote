@@ -73,7 +73,7 @@
 	</table>
 
 	<?php if($quote['user_id'] == $me['id']) { ?>
-	<div class="actions">
+	<div class="actions relat-q">
 		<ul>
 			<li><?php echo $this->Html->link(__('New Quote'), array('controller' => 'quotes', 'action' => 'add')); ?> </li>
 		</ul>

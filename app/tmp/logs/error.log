@@ -428,3 +428,91 @@ Stack Trace:
 #3 /Users/sego/Sites/cakequote/lib/Cake/Core/App.php(899): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2013-02-22 15:08:49 Error: [MissingActionException] Action UsersController::admin() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'admin',
+)
+Request URL: /cakequote/users/admin
+Stack Trace:
+#0 /Users/sego/Sites/cakequote/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/sego/Sites/cakequote/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/sego/Sites/cakequote/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-02-22 15:08:54 Error: [MissingActionException] Action UsersController::admin() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'admin',
+)
+Request URL: /cakequote/users/admin/quotes
+Stack Trace:
+#0 /Users/sego/Sites/cakequote/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/sego/Sites/cakequote/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/sego/Sites/cakequote/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-02-22 15:08:57 Error: [MissingActionException] Action UsersController::admin() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'admin',
+)
+Request URL: /cakequote/users/admin/quotes
+Stack Trace:
+#0 /Users/sego/Sites/cakequote/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/sego/Sites/cakequote/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/sego/Sites/cakequote/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-02-22 15:09:00 Error: [MissingActionException] Action UsersController::admin() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'admin',
+)
+Request URL: /cakequote/users/admin/quote
+Stack Trace:
+#0 /Users/sego/Sites/cakequote/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/sego/Sites/cakequote/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/sego/Sites/cakequote/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-02-22 15:09:06 Error: [MissingActionException] Action UsersController::admin() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'admin',
+)
+Request URL: /cakequote/users/admin/quote
+Stack Trace:
+#0 /Users/sego/Sites/cakequote/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/sego/Sites/cakequote/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/sego/Sites/cakequote/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-02-22 15:10:05 Error: [MissingActionException] Action UsersController::admin() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'admin',
+)
+Request URL: /cakequote/users/admin/quotes
+Stack Trace:
+#0 /Users/sego/Sites/cakequote/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/sego/Sites/cakequote/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/sego/Sites/cakequote/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-02-22 15:10:08 Error: [MissingActionException] Action UsersController::admin() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'admin',
+)
+Request URL: /cakequote/users/admin/quotes
+Stack Trace:
+#0 /Users/sego/Sites/cakequote/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/sego/Sites/cakequote/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/sego/Sites/cakequote/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-02-22 15:18:29 Error: [MissingActionException] Action QuotesController::home() could not be found.
+Exception Attributes: array (
+  'controller' => 'QuotesController',
+  'action' => 'home',
+)
+Request URL: /cakequote/
+Stack Trace:
+#0 /Users/sego/Sites/cakequote/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/sego/Sites/cakequote/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(QuotesController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/sego/Sites/cakequote/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}

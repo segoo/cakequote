@@ -24,6 +24,8 @@
 	<title>
 		<?php echo $title_for_layout; ?>
 	</title>
+	<link href='http://fonts.googleapis.com/css?family=Marck+Script' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Calligraffitti' rel='stylesheet' type='text/css'>
 	<?php
 		echo $this->Html->meta(array("name"=>"viewport","content"=>"width=device-width, initial-scale=1.0"));
 		echo $this->Html->meta('icon');
@@ -58,11 +60,11 @@
 		            </li>
 		            
 		              	<?php if($me['id']>0): ?>
-							<li class=""><?php echo $this->Html->link('logout', '/users/logout') ?></li>
+							<li class=""><?php echo $this->Html->link('Déconnexion', '/users/logout') ?></li>
 							<li class=""><?php echo $this->Html->link(__('Quotes'), array('controller' => 'quotes', 'action' => 'index')); ?> </li>
 							<li class=""><?php echo $this->Html->link(__('Users'), array('controller' => 'users', 'action' => 'index')); ?> </li>
 						<?php else: ?>
-							<li class=""><?php echo $this->Html->link('login', '/users/login') ?></li>
+							<li class=""><?php echo $this->Html->link('Connexion', '/users/login') ?></li>
 							<li class="">
 				              <?php echo $this->Html->link(__('New User'), array('controller' => 'users', 'action' => 'add')); ?>
 				            </li>

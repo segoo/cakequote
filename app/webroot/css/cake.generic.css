@@ -194,7 +194,6 @@ table td.actions a {
 
 /** Paging **/
 .paging {
-	background:#fff;
 	color: #ccc;
 	margin-top: 1em;
 	clear:both;
@@ -227,9 +226,9 @@ table td.actions a {
 }
 .paging .disabled {
 	color: #ddd;
+	background:#fff;
 }
 .paging .disabled:hover {
-	background: transparent;
 }
 .paging .current {
 	background: #efefef;
@@ -561,6 +560,7 @@ input[type=submit]:active,
 .related {
 	clear: both;
 	display: block;
+	background:#F4F4F4;
 }
 
 /** Debugging **/
@@ -749,4 +749,10 @@ pre {
 	padding:10px;
 	border-radius:10px;
 	background:#F4F2F2;
+}
+body{
+	background:url('../img/kindajean.png');
+}
+.quotes, .users{
+	background:#F4F4F4;
 }

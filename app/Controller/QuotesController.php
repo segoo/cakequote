@@ -37,6 +37,7 @@ class QuotesController extends AppController {
 		$this->Quote->recursive = 0;
 		$this->set('quotes', $this->paginate());
 	}
+	
 
 /**
  * view method

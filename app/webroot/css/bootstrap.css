@@ -768,13 +768,21 @@ h1 {
 }
 
 h2 {
-  font-size: 31.5px;
+  font-size: 35.5px;
+	background:none;
+	font-family: 'Calligraffitti', cursive;
 }
 
 h3 {
   font-size: 24.5px;
+	color:#aaa;
+	font-weight:normal;
+	text-transform:uppercase;
+	font-family:verdana;
 }
-
+.lead{
+	font-family: 'Marck Script', cursive;
+}
 h4 {
   font-size: 17.5px;
 }
@@ -1030,7 +1038,8 @@ form {
   margin: 0px 0 20px;
 }
 #UserLoginForm{
-	margin: 100px 0 20px;
+	margin: 100px auto 20px;
+	width:20%;
 }
 
 fieldset {
