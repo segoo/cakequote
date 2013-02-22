@@ -16,14 +16,35 @@
 		<td><?php echo h($quote['Quote']['title']); ?>&nbsp;</td>
 		<td><?php echo h($quote['Quote']['body']); ?>&nbsp;</td>
 		<td>
-			<?php echo $this->Html->link($quote['User']['username'], array('controller' => 'users', 'action' => 'view', $quote['User']['id'])); ?>
+			<?php 
+			if($me['id'] === 0){
+				echo h($quote['User']['username']);
+			}else{
+				echo $this->Html->link($quote['User']['username'], array('controller' => 'users', 'action' => 'view', $quote['User']['id'])); 
+			}?>
 		</td>
 		<td><?php echo h($quote['Quote']['created']); ?>&nbsp;</td>
 		<td><?php echo h($quote['Quote']['updated']); ?>&nbsp;</td>
 		<td class="actions">
-			<?php echo $this->Html->link(__('View'), array('action' => 'view', $quote['Quote']['id'])); ?>
-			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $quote['Quote']['id'])); ?>
-			<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $quote['Quote']['id']), null, __('Are you sure you want to delete # %s?', $quote['Quote']['id'])); ?>
+			
+			
+			<?php 
+			if($me['id'] === 0){
+				echo $this->Html->link(__('View'), array('action' => 'view', $quote['Quote']['id']));
+			}else{
+				if($me['id']>0 && $quote['User']['id'] == $me['id']) {
+					echo $this->Html->link(__('View'), array('action' => 'view', $quote['Quote']['id']));
+					echo $this->Html->link(__('Edit'), array('action' => 'edit', $quote['Quote']['id']));
+					echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $quote['Quote']['id']), null, __('Are you sure you want to delete # %s?', $quote['Quote']['id']));
+				} 	else {
+						echo $this->Html->link(__('View'), array('action' => 'view', $quote['Quote']['id']));
+					}
+			}
+			
+			
+			
+			
+			?>
 		</td>
 	</tr>
 <?php endforeach; ?>
@@ -42,11 +63,13 @@
 	?>
 	</div>
 </div>
+<?php if($me['id']>0){ ?>
 <div class="actions">
 	<h3><?php echo __('Actions'); ?></h3>
 	<ul>
 		<li><?php echo $this->Html->link(__('New Quote'), array('action' => 'add')); ?></li>
-		<li><?php echo $this->Html->link(__('List Users'), array('controller' => 'users', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New User'), array('controller' => 'users', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Quotes'), array('controller' => 'quotes', 'action' => 'index')); ?> </li>
+		
 	</ul>
 </div>
+<?php } else { echo '';}?>

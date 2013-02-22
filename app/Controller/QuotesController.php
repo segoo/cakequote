@@ -75,6 +75,7 @@ class QuotesController extends AppController {
 		$users = $this->Quote->User->find('list');
 		$this->set(compact('users'));
 	}
+	
 
 /**
  * edit method

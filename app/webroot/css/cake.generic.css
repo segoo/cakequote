@@ -30,7 +30,7 @@ body {
 	margin: 0;
 }
 a {
-	color: #003d4c;
+	color: white;
 	text-decoration: underline;
 	font-weight: bold;
 }
@@ -67,6 +67,9 @@ h4 {
 }
 ul, li {
 	margin: 0 12px;
+}
+.menu li{
+	display:inline;
 }
 p {
 	margin: 0 0 1em 0;
@@ -120,12 +123,12 @@ div.view {
 	float:right;
 	width:76%;
 	border-left:1px solid #666;
-	padding:10px 2%;
+	padding:100px 2%;
 }
 div.actions {
 	float:left;
 	width:16%;
-	padding:10px 1.5%;
+	padding:100px 1.5%;
 }
 div.actions h3 {
 	padding-top:0;
@@ -245,14 +248,11 @@ dl dt:nth-child(4n+1) {
 }
 
 dt {
-	font-weight: bold;
 	padding-left: 4px;
 	vertical-align: top;
-	width: 10em;
 }
 dd {
 	margin-left: 10em;
-	margin-top: -2em;
 	vertical-align: top;
 }
 
@@ -739,4 +739,14 @@ pre {
 /** Elements **/
 #url-rewriting-warning {
 	display:none;
+}
+
+/*MON CSS*/
+.citation{
+	margin-bottom:30px;
+	border:solid 2px #ccc;
+	width:58%;
+	padding:10px;
+	border-radius:10px;
+	background:#F4F2F2;
 }

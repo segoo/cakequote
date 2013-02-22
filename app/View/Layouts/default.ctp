@@ -25,40 +25,67 @@
 		<?php echo $title_for_layout; ?>
 	</title>
 	<?php
+		echo $this->Html->meta(array("name"=>"viewport","content"=>"width=device-width, initial-scale=1.0"));
 		echo $this->Html->meta('icon');
 
 		echo $this->Html->css('cake.generic');
+		echo $this->Html->css('bootstrap');
+	    echo $this->Html->css('bootstrap-responsive');
 
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
 		echo $this->fetch('script');
 	?>
+	
+	<?php echo $scripts_for_layout; ?>
 </head>
-<body>
+<body data-spy="scroll" data-target=".subnav" data-offset="50">
 	<div id="container">
-		<div id="header">
-			<h1><?php echo $this->Html->link('cakequote', '/'); ?></h1>
-		</div>
-		<div id="content">
+		<div class="navbar navbar-fixed-top">
+		    <div class="navbar-inner">
+		      <div class="container">
+		        <a class="btn btn-navbar" data-toggle="collapse"
+		          data-target=".nav-collapse">
+		          <span class="icon-bar"></span>
+		          <span class="icon-bar"></span>
+		          <span class="icon-bar"></span>
+		        </a>
+		        <a class="brand" href="/cakequote/">CakeQuote</a>
+		        <div class="nav-collapse">
+		          <ul class="nav">
+		            <li class="active">
+		              <a href="#"><?php echo $me['username']; ?></a>
+		            </li>
+		            
+		              	<?php if($me['id']>0): ?>
+							<li class=""><?php echo $this->Html->link('logout', '/users/logout') ?></li>
+							<li class=""><?php echo $this->Html->link(__('Quotes'), array('controller' => 'quotes', 'action' => 'index')); ?> </li>
+							<li class=""><?php echo $this->Html->link(__('Users'), array('controller' => 'users', 'action' => 'index')); ?> </li>
+						<?php else: ?>
+							<li class=""><?php echo $this->Html->link('login', '/users/login') ?></li>
+							<li class="">
+				              <?php echo $this->Html->link(__('New User'), array('controller' => 'users', 'action' => 'add')); ?>
+				            </li>
+						<?php endif; ?>
+		            
+
+		          </ul>
+		        </div>
+		      </div>
+		    </div>
+		  </div>
 		
-			<h2>
-			<?php echo $me['username']; ?>
-			<?php if($me['id']>0): ?>
-				<div><?php echo $this->Html->link('logout', '/users/logout') ?></div>
-			<?php else: ?>
-				<div><?php echo $this->Html->link('login', '/users/login') ?></div>
-			<?php endif; ?>
-			</h2>
+		<div id="row">
+		
 
 
 			<?php echo $this->Session->flash(); ?>
 
 			<?php echo $this->fetch('content'); ?>
 		</div>
-		<div id="footer">
-			coded with love
+		
 		</div>
 	</div>
-	<?php echo $this->element('sql_dump'); ?>
+	
 </body>
 </html>

@@ -21,6 +21,13 @@
 			<h1>admin:<?php echo $this->Html->link('cakequote', '/'); ?></h1>
 		</div>
 		<div id="content">
+			
+			<h2>
+			<?php echo $me['username']; ?>
+			<?php if($me['id']>0): ?>
+				<div><?php echo $this->Html->link('logout', '/users/logout') ?></div>
+			<?php endif; ?>
+			</h2>
 
 			<?php echo $this->Session->flash(); ?>
 
