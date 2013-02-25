@@ -1,5 +1,9 @@
 <div class="quotes index">
-	<h2><?php echo __('Quotes'); ?></h2>
+	
+	<div class="banniere"></div>
+	
+	
+	<h2><?php echo __("Vos citations d'Esprits Criminels"); ?></h2>
 	
 	
 	

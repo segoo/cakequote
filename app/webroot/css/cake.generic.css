@@ -756,3 +756,9 @@ body{
 .quotes, .users{
 	background:#F4F4F4;
 }
+.banniere{
+	background:url('../img/espritscriminels.jpg');
+	width:750px;
+	height:193px;
+	margin-bottom:40px;
+}
